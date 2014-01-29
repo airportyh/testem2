@@ -1,0 +1,4 @@
+framework: jasmine
+src_files:
+- hello.js
+- tests.js
