@@ -21,6 +21,7 @@
     "socket.io": "~0.9.16",
     "socket.io-client": "~0.9.16",
     "coffee-script": "~1.7.1",
-    "is-type": "0.0.1"
+    "is-type": "0.0.1",
+    "istanbul": "~0.2.4"
   }
 }

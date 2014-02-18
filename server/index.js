@@ -11,11 +11,11 @@ var sinon = require('../test_libraries/sinon')
 var coffee = require('./coffee_script')
 var is = require('is-type')
 var assert = require('assert')
+var istanbul = require('./istanbul')
 
 module.exports = function(config){
 
   var middlewares = []
-
   
   middlewares.push(
     noCache(config),
@@ -26,6 +26,7 @@ module.exports = function(config){
   middlewares = middlewares.concat(libraryMiddlewares(config))
   middlewares.push(coffee(config))
   
+  middlewares.push(istanbul(config))
   middlewares.push(injectSrcFiles(config))
   middlewares.push(renderTestPage(config))
 
