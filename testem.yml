@@ -1,4 +1,5 @@
-framework: jasmine
+framework:
+  qunit: true
 src_files:
-- hello.js
-- tests.js
+- hello.coffee
+- tests2.coffee

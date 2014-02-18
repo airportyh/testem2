@@ -6,14 +6,14 @@
   <link rel="stylesheet" href="/testem/mocha/mocha.css">
   <script src="/testem/mocha/mocha.js"></script>
   <script src="/testem.js"></script>
-  <script>mocha.setup('bdd')</script>
-{{#scripts}}<script src="{{src}}"{{#attrs}} {{&.}} {{/attrs}}></script>{{/scripts}}
-  {{#styles}}<link rel="stylesheet" href="{{.}}">{{/styles}}
+  <script src="/testem/mocha/adapter.js"></script>
 </head>
 <body>
   <div id="mocha"></div>
   <script>
-  mocha.run()
+  window.onload = function(){
+    mocha.run()
+  }
   </script>
 </body>
 </html>

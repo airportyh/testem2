@@ -1,0 +1,6 @@
+framework:
+  mocha: tdd
+libraries:
+  chai: assert
+src_files:
+- "*.js"
