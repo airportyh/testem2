@@ -1,0 +1,3 @@
+framework: jasmine
+src_files:
+- "*.coffee"
